@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>Pixel Art Maker!</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Pixel Art</h1>
+    <div class="grid-size-container">
+      <h2 class="grid-sizer-text">Choose Grid Size</h2>
+      <form id="size-picker" class="grid-sizer">
+        <select id="grid-size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="xlarge">X-Large</option>
+        </select>
+        <button type="submit" name="submit" value="submit">Create Grid!</button>
+      </form>
+    </div>
+    <div class="pick-color-container">
+      <h2 class="color-picker-text">Pick Color</h2>
+      <input type="color" class="color-picker" id="color-picker">
+      <div id="swatch-container" class="swatch-container">
+      </div>
+    </div>
+
+    <div id="preview" class="preview-canvas"></div>
+
+    <div id="main-canvas" class="main-canvas">
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
